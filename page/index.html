@@ -1,239 +1,245 @@
 <!DOCTYPE html>
 <html lang="cn">
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    CloudMoe OpenTAP 官方网站
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <!-- CSS Files -->
-  <link href="./assets/css/material-kit.css" rel="stylesheet" />
-  <link href="./assets/home/home.css" rel="stylesheet" />
-  <style>
-    /*文字轮播效果*/
-    #description_info {
-        transition: all 0.5s ease-in-out;
-        height: 24px
-    }
-    </style>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+        <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>
+            CloudMoe OpenTAP 官方网站
+        </title>
+        <script src="./assets/js/TweenMax.min.js"></script>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+        <!--     Fonts and icons     -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons+Round" />
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- CSS Files -->
+        <link href="./assets/css/material-kit.css" rel="stylesheet" />
+        <link href="./assets/home/home.css" rel="stylesheet" />
+        <style>
+            /*文字轮播效果*/
+            #description_info {
+                transition: all 0.5s ease-in-out;
+                height: 24px
+            }
+            svg g {
+                mix-blend-mode: lighten;
+            }
+            svg polygon {
+                stroke: none;
+                fill: white;
+            }
+        </style>
+    </head>
 
-<body class="index-page sidebar-collapse">
-  <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
-    <div class="container">
-      <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-          CloudMoe OpenTAP </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i class="material-icons">apps</i> 语言
-            </a>
-            <div class="dropdown-menu dropdown-with-icons">
-              <a href="#" class="dropdown-item">
-                <i class="material-icons">layers</i> 中文
-              </a>
-              <!-- <a href="#" class="dropdown-item">
-                <i class="material-icons">layers</i> 中文
-              </a> -->
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://github.com/TGSAN/OpenTAP" target="_blank" data-original-title="在 GitHub 上给点个Star">
-              <i class="fa fa-github"></i> Star on GitHub
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-    <div class="page-header header-filter clear-filter purple-filter" data-parallax="true" style="background-image: url('./assets/img/bg2.jpg');">
-        <div class="container">
-        <div class="row">
-            <div class="col-md-8 ml-auto mr-auto">
-                <div class="brand">
-                    <h1>OpenTAP</h1>
-                    <h3 id="description_info">不只是开源游戏加速器，她还是...</h3>
-                </div>
-                <br/>
-                <div class="text-center">
-                    <a href="javascript:void(0)" onclick="scrollToDownload()" class="btn btn-white btn-upgrade btn-lg btn-round">
-                        <i class="material-icons">cloud_download</i> 下载
-                    </a>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="main main-raised">
-        <div class="section section-basic">
+    <body class="index-page sidebar-collapse">
+        <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
             <div class="container">
-                <div class="pricing-2">
-                    <div class="text-center">
-                        <div class="title">
-                            <h2>捐赠作者</h2>
+                <div class="navbar-translate">
+                    <a class="navbar-brand" href="#">
+                    CloudMoe OpenTAP </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="dropdown nav-item">
+                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                <i class="material-icons-round">apps</i>&nbsp;语言
+                            </a>
+                            <div class="dropdown-menu dropdown-with-icons">
+                                <a href="#" class="dropdown-item">
+                                    <i class="material-icons-round">layers</i>&nbsp;中文
+                                </a>
+                                <!-- <a href="#" class="dropdown-item">
+                                    <i class="material-icons-round">layers</i> 中文
+                                </a> -->
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://github.com/TGSAN/OpenTAP" target="_blank" data-original-title="在 GitHub 上点赞">
+                                <i class="fab fa-github"></i>&nbsp;STAR ME ON GITHUB
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="page-header header-filter clear-filter" filter-color="none" data-parallax="true" style="background: #29b6f6;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <div class="brand">
+                            <h1>OpenTAP</h1>
+                            <h3 id="description_info">不只是开源游戏加速器，她还是...</h3>
+                        </div>
+                        <br/>
+                        <div class="text-center">
+                            <a href="javascript:void(0)" onclick="scrollToDownload()" class="btn btn-white btn-upgrade btn-lg btn-round">
+                                <i class="material-icons-round">expand_more</i>&nbsp;转到下载
+                            </a>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 ml-auto mr-auto text-center">
-                        <ul class="nav nav-pills nav-pills-danger">
-                            <li class="nav-item">
-                            <a class="nav-link active" href="#donate" data-toggle="tab">无偿捐赠</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#gift" data-toggle="tab">有偿捐赠（暂不开放）</a>
-                            </li>
-                        </ul>
+                </div>
+            </div>
+            <svg id="svg-background" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" style="overflow: overlay; position: absolute; height: 100%; width: 100%;">
+                <defs>
+                    <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0" color-interpolation="sRGB">
+                    <stop id="stop1a" offset="0%" stop-color="#12a3b4"></stop>
+                    <stop id="stop1b" offset="100%" stop-color="#ff509e"></stop>
+                    </linearGradient>
+                    <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="0" color-interpolation="sRGB">
+                    <stop id="stop2a" offset="0%" stop-color="#e3bc13"></stop>
+                    <stop id="stop2b" offset="100%" stop-color="#00a78f"></stop>
+                    </linearGradient>
+                </defs>
+                <rect id="rect1" x="0" y="0" width="100%" height="100%" stroke="none" fill="url(#grad1)"></rect>
+                <rect id="rect2" x="0" y="0" width="100%" height="100%" stroke="none" fill="url(#grad2)"></rect>
+            </svg>
+        </div>
+        <div class="main main-raised">
+            <div class="section section-basic">
+                <div class="container">
+                    <div class="pricing-2">
+                        <div class="text-center">
+                            <div class="title">
+                                <h2>捐赠作者</h2>
+                            </div>
                         </div>
-                    </div>
-                    <div class="tab-content tab-space">
-                        <div class="tab-pane active text-center gallery" id="donate">
-                            <p class="description">
-                                通过微信、支付宝或者PayPal捐赠作者
-                            </p>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card card-pricing card-alipay bg-alipay">
-                                        <div class="card-body">
-                                            <h6 class="card-category text-info">支付宝</h6>
-                                            <ul>
-                                                <li>
-                                                国内用户建议用此方式捐赠
-                                                </li>
-                                            </ul>
-                                            <a class="btn btn-white btn-raised btn-round dropdown-toggle" href="#" id="AlipayDropdownQR" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            手机扫码捐赠作者
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="AlipayDropdownQR">
-                                                QR
+                        <div class="row">
+                            <div class="col-md-6 ml-auto mr-auto text-center">
+                            <ul class="nav nav-pills nav-pills-danger">
+                                <li class="nav-item">
+                                <a class="nav-link active" href="#donate" data-toggle="tab">无偿捐赠</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#gift" data-toggle="tab">有偿捐赠（暂不开放）</a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="tab-content tab-space">
+                            <div class="tab-pane active text-center gallery" id="donate">
+                                <p class="description">
+                                    通过微信、支付宝或者PayPal捐赠作者
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card card-pricing card-alipay bg-alipay">
+                                            <div class="card-body">
+                                                <h6 class="card-category text-info">支付宝</h6>
+                                                <ul>
+                                                    <li>
+                                                    国内用户建议用此方式捐赠
+                                                    </li>
+                                                </ul>
+                                                <a class="btn btn-white btn-raised btn-round" href="#" data-toggle="modal" data-target="#alipayQRModal">
+                                                手机扫码捐赠作者
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card card-pricing card-rose bg-rose">
-                                        <div class="card-body">
-                                            <h6 class="card-category text-info">PayPal</h6>
-                                            <ul>
-                                                <li>
-                                                海外用户建议用此方式捐赠
-                                                </li>
-                                            </ul>
-                                            <a href="#pablo" class="btn btn-white btn-raised btn-round">
-                                            前往PayPay捐赠作者
-                                            </a>
+                                    <div class="col-md-4">
+                                        <div class="card card-pricing card-github bg-github">
+                                            <div class="card-body">
+                                                <h6 class="card-category text-info">PayPal</h6>
+                                                <ul>
+                                                    <li>
+                                                    海外用户建议用此方式捐赠
+                                                    </li>
+                                                </ul>
+                                                <a href="https://www.paypal.me/tgsan" target="_blank" class="btn btn-white btn-raised btn-round">
+                                                前往PayPay捐赠作者
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card card-pricing card-wechat bg-wechat">
-                                        <div class="card-body">
-                                            <h6 class="card-category text-info">微信</h6>
-                                            <ul>
-                                                <li>
-                                                国内用户建议用此方式捐赠
-                                                </li>
-                                            </ul>
-                                            <a class="btn btn-white btn-raised btn-round dropdown-toggle" href="#" id="WechatDropdownQR" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            手机扫码捐赠作者
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="WechatDropdownQR">
-                                                QR
+                                    <div class="col-md-4">
+                                        <div class="card card-pricing card-wechat bg-wechat">
+                                            <div class="card-body">
+                                                <h6 class="card-category text-info">微信</h6>
+                                                <ul>
+                                                    <li>
+                                                    国内用户建议用此方式捐赠
+                                                    </li>
+                                                </ul>
+                                                <a class="btn btn-white btn-raised btn-round" href="#" data-toggle="modal" data-target="#wechatQRModal">
+                                                手机扫码捐赠作者
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="card card-pricing card-warning bg-warning">
+                                            <div class="card-body">
+                                                <h6 class="card-category text-info"><i class="fab fa-bitcoin"></i>&nbsp;Bitcoin</h6>
+                                                <ul style="max-width: 75%;">
+                                                    <li>
+                                                    使用比特币（BTC）进行捐赠
+                                                    </li>
+                                                    <li>
+                                                    <b>12uBWBZ7Dk4dtTYniwpTxi5d8mT75yxsLB</b>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tab-pane text-center gallery" id="gift">
-                            <p class="description">
-                                仅捐赠作者赠送学习测试用游戏加速节点（用于测试加速效果，时长不可叠加）
-                                <br>
-                                <small>*主要为赞助功能，测试节点仅为附加福利，赠送时长不能叠加（如果前一次赠送尚未到期时再次捐赠，则会覆盖上一次赠送的时长）</small>
-                                <br>
-                                <small>*已经在服务端对中国大陆禁止访问的网站进行屏蔽，仅能用于游戏加速。</small>
-                                <br>
-                                <small>*所有节点均为没有VPN、翻墙等违法中国大陆法律法规的功能</small>
-                            </p>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card card-pricing card-plain">
-                                        <div class="card-body">
-                                            <h6 class="card-category text-info">送2天节点测试时长</h6>
-                                            <h1 class="card-title">
-                                                <small>￥</small>5
-                                                <!-- <small>两天</small> -->
-                                            </h1>
-                                            <ul>
-                                                    <li>
-                                                    <b>2</b> 天加速时长（不可暂停）</li>
-                                                    <li>
-                                                    <b>1</b> 个账号同时加速</li>
-                                                    <li>
-                                                    <b>10</b> 个地区加速节点智能分配</li>
-                                                    <li>
-                                                    <b>50+</b> 个阿里云专线节点</li>
-                                                    <li>
-                                                    <b>不可</b>自定规则（可提交）</li>
-                                            </ul>
-                                            <a href="#" class="btn btn-primary btn-raised btn-round disabled">
-                                                赞助作者（暂未开放）
-                                            </a>
+                            <div class="tab-pane text-center gallery" id="gift">
+                                <p class="description">
+                                    仅捐赠作者赠送学习测试用游戏加速节点（用于测试加速效果，时长不可叠加）
+                                    <br>
+                                    <small>*主要为赞助功能，测试节点仅为附加福利，赠送时长不能叠加（如果前一次赠送尚未到期时再次捐赠，则会覆盖上一次赠送的时长）</small>
+                                    <br>
+                                    <small>*已经在服务端对中国大陆禁止访问的网站进行屏蔽，仅能用于游戏加速。</small>
+                                    <br>
+                                    <small>*所有节点均为没有VPN、翻墙等违法中国大陆法律法规的功能</small>
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card card-pricing card-plain">
+                                            <div class="card-body">
+                                                <h6 class="card-category text-info">送2天节点测试时长</h6>
+                                                <h1 class="card-title">
+                                                    <small>￥</small>5
+                                                    <!-- <small>两天</small> -->
+                                                </h1>
+                                                <ul>
+                                                        <li>
+                                                        <b>2</b> 天加速时长（不可暂停）</li>
+                                                        <li>
+                                                        <b>1</b> 个账号同时加速</li>
+                                                        <li>
+                                                        <b>10</b> 个地区加速节点智能分配</li>
+                                                        <li>
+                                                        <b>50+</b> 个阿里云专线节点</li>
+                                                        <li>
+                                                        <b>不可</b>自定规则（可提交）</li>
+                                                </ul>
+                                                <a href="#" class="btn btn-primary btn-raised btn-round disabled">
+                                                    赞助作者（暂未开放）
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card card-pricing card-raised bg-primary">
-                                        <div class="card-body">
-                                            <h6 class="card-category text-info">送1天节点测试时长</h6>
-                                            <h1 class="card-title">
-                                                <small>￥</small>3
-                                                <!-- <small>一天</small> -->
-                                            </h1>
-                                            <ul>
-                                                <li>
-                                                <b>1</b> 天加速时长（不可暂停）</li>
-                                                <li>
-                                                <b>1</b> 个账号同时加速</li>
-                                                <li>
-                                                <b>10</b> 个地区加速节点智能分配</li>
-                                                <li>
-                                                <b>50+</b> 个阿里云专线节点</li>
-                                                <li>
-                                                <b>不可</b> 自定规则（可提交）</li>
-                                            </ul>
-                                            <a href="#" class="btn btn-white btn-raised btn-round disabled">
-                                                赞助作者（暂未开放）
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card card-pricing card-plain">
-                                        <div class="card-body">
-                                            <h6 class="card-category text-info">送7天节点测试时长</h6>
-                                            <h1 class="card-title">
-                                                <small>￥</small>15
-                                                <!-- <small>七天</small> -->
-                                            </h1>
-                                            <ul>
+                                    <div class="col-md-4">
+                                        <div class="card card-pricing card-raised bg-primary">
+                                            <div class="card-body">
+                                                <h6 class="card-category text-info">送1天节点测试时长</h6>
+                                                <h1 class="card-title">
+                                                    <small>￥</small>3
+                                                    <!-- <small>一天</small> -->
+                                                </h1>
+                                                <ul>
                                                     <li>
-                                                    <b>7</b> 天加速时长（不可暂停）</li>
+                                                    <b>1</b> 天加速时长（不可暂停）</li>
                                                     <li>
                                                     <b>1</b> 个账号同时加速</li>
                                                     <li>
@@ -242,274 +248,667 @@
                                                     <b>50+</b> 个阿里云专线节点</li>
                                                     <li>
                                                     <b>不可</b> 自定规则（可提交）</li>
-                                            </ul>
-                                            <a href="#" class="btn btn-primary btn-raised btn-round disabled">
-                                                赞助作者（暂未开放）
-                                            </a>
+                                                </ul>
+                                                <a href="#" class="btn btn-white btn-raised btn-round disabled">
+                                                    赞助作者（暂未开放）
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-pricing card-plain">
+                                            <div class="card-body">
+                                                <h6 class="card-category text-info">送7天节点测试时长</h6>
+                                                <h1 class="card-title">
+                                                    <small>￥</small>15
+                                                    <!-- <small>七天</small> -->
+                                                </h1>
+                                                <ul>
+                                                        <li>
+                                                        <b>7</b> 天加速时长（不可暂停）</li>
+                                                        <li>
+                                                        <b>1</b> 个账号同时加速</li>
+                                                        <li>
+                                                        <b>10</b> 个地区加速节点智能分配</li>
+                                                        <li>
+                                                        <b>50+</b> 个阿里云专线节点</li>
+                                                        <li>
+                                                        <b>不可</b> 自定规则（可提交）</li>
+                                                </ul>
+                                                <a href="#" class="btn btn-primary btn-raised btn-round disabled">
+                                                    赞助作者（暂未开放）
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="features-1">
-                    <div class="title">
-                        <h2>OpenTAP 是什么</h2>
+                    <div class="features-1">
+                        <div class="title">
+                            <h2>OpenTAP 是什么</h2>
+                            <div class="row">
+                                <div class="col-md-8 ml-auto mr-auto">
+                                    <h5 class="description text-center">
+                                        OpenTAP 全称 CloudMoe Open-Source TAP，是一款 CloudMoe 旗下以 SSTap 为原型利用虚拟网卡技术在网络层实现的代理工具。
+                                        <br>
+                                        OpenTAP 通过路由表，能在网络层拦截路由表规则中的所有连接并转发给 Socks5、Shadowsocks、V2Ray 代理，
+                                        <br>
+                                        而无需对被代理的应用程序做任何更改或设置。
+                                        <br>
+                                        她能同时转发 TCP、UDP 数据包，因为 OpenTAP 专为游戏玩家打造，所以
+                                        <br>
+                                        <b>必须连接的节点支持 UDP 才能开启代理</b>。
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-2">
                         <div class="row">
-                            <div class="col-md-8 ml-auto mr-auto">
-                                <h5 class="description text-center">
-                                    OpenTAP 全称 CloudMoe Open-Source TAP，是一款 CloudMoe 旗下以 SSTap 为原型利用虚拟网卡技术在网络层实现的代理工具。
-                                    <br>
-                                    OpenTAP 通过路由表，能在网络层拦截路由表规则中的所有连接并转发给 Socks5、Shadowsocks、V2Ray 代理，
-                                    <br>
-                                    而无需对被代理的应用程序做任何更改或设置。
-                                    <br>
-                                    她能同时转发 TCP、UDP 数据包，因为 OpenTAP 专为游戏玩家打造，所以
-                                    <br>
-                                    <b>必须连接的节点支持 UDP 才能开启代理</b>。
-                                </h4>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header card-header-primary">
+                                            <i class="material-icons-round" style="font-size: 4rem">code</i>
+                                            <h4 class="card-title">代码开源<sup>&nbsp;*</sup></h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <br>
+                                            <h5 class="description text-center">OpenTAP 使用 GNU GPLv3 进行开源，任何人都可以监管、参与 OpenTAP 项目的开发。</h5>
+                                            <p><small>* 开源的版本为 OpenTAP 社区版（Community），只有小部分私有、实验性功能会在 OpenTAP 专业版（Pro）项目中以 Apache License, Version 2.0 协议进行半闭源开发（即特约成员可参与开发、对 OpenTAP 专业版 进行 OEM 定制），OpenTAP 专业版 将不定期合并进 OpenTAP 社区版分支。</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header card-header-warning">
+                                            <i class="material-icons-round" style="font-size: 4rem">vpn_key</i>
+                                            <h4 class="card-title">使用虚拟网卡技术</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <br>
+                                            <h5 class="description text-center">使用 OpenVPN Windows TAP V9 Driver 官方社区版虚拟网卡技术进行开发，稳定性高于三方虚拟网卡驱动，速度可达100Mbps<sup>&nbsp;*</sup>，并支持根据规则进行局部代理或系统全局代理。</h5>
+                                            <p><small>* OpenVPN Windows TAP V9 社区版驱动最高支持100Mbps，并非 OpenTAP 的最大支持速度。</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header card-header-alipay">
+                                            <i class="material-icons-round" style="font-size: 4rem">view_quilt</i>
+                                            <h4 class="card-title">精美界面</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <br>
+                                            <h5 class="description text-center">基于 CloudMoe UI Framework 打造的精美界面，因为云萌UI框架的强大兼容性，让 OpenTAP 在拥有接近 UWP 华丽界面的同时，甚至可以在 Windows Vista 表现出同样惊艳的视觉效果。</h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header card-header-danger">
-                                    <i class="material-icons" style="font-size: 4rem">code</i>
-                                    <h4 class="card-title">代码开源&nbsp;<sup>*</sup></h4>
-                                </div>
-                                <div class="card-body">
-                                    <br>
-                                    <h5 class="description text-center">OpenTAP 使用 GNU GPLv3 进行开源，任何人都可以监管、参与 OpenTAP 项目的开发。</h5>
-                                    <p><small>* 开源的版本为 OpenTAP 的社区版（Community），部分私有、实验性功能会在 OpenTAP-Pro 项目中以 Apache License, Version 2.0 协议进行半闭源开发（即特约成员可参与开发、对 OpenTAP-Pro 进行 OEM 定制），OpenTAP-Pro 将不定期合并进社区版分支。</small></p>
-                                </div>
+                </div>
+                <br/><br/><br/><br/>
+                <div class="section section-cards section-dark">
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-md-7">
+                            <div class="image-container">
+                            <img class="img" src="./assets/img/cards-test.png">
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header card-header-primary">
-                                    <i class="material-icons" style="font-size: 4rem">vpn_key</i>
-                                    <h4 class="card-title">使用虚拟网卡技术</h4>
-                                </div>
-                                <div class="card-body">
-                                    <br>
-                                    <h5 class="description text-center">使用 OpenVPN Windows TAP V9 Driver 官方社区版虚拟网卡技术进行开发，稳定性高于三方虚拟网卡驱动，速度可达100Mbps*，并支持根据规则进行局部代理或系统全局代理。</h5>
-                                    <p><small>* OpenVPN Windows TAP V9 社区版驱动最高支持100Mbps，并非 OpenTAP 的最大支持速度。</small></p>
-                                </div>
+                        <div class="col-md-4 ml-auto">
+                            <div class="section-description">
+                            <h3 class="title">Unconventional Cards</h3>
+                            <h6 class="description">One Card for Every Problem</h6>
+                            <h5 class="description">We love cards and everybody on the web seems to. We have gone above and beyond with options for you to organise your information. From cards designed for blog posts, to product cards or user profiles, you will have many options to choose from. All the cards follow the material principles and have a design that stands out. </h5>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header card-header-success">
-                                    <i class="material-icons" style="font-size: 4rem">vpn_key</i>
-                                    <h4 class="card-title">使用虚拟网卡技术</h4>
-                                </div>
-                                <div class="card-body">
-                                    <br>
-                                    <h5 class="description text-center">使用 OpenVPN Windows TAP V9 Driver 官方社区版虚拟网卡技术进行开发，稳定性高于三方虚拟网卡驱动，速度可达100Mbps*，并支持根据规则进行局部代理或系统全局代理。</h5>
-                                    <p><small>* OpenVPN Windows TAP V9 社区版驱动最高支持100Mbps，并非 OpenTAP 的最大支持速度。</small></p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <br/><br/><br/><br/>
-            <div class="section section-cards section-dark">
+                <br/><br/><br/><br/>
+                <div class="section-components">
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-lg-5 col-md-12">
+                            <h3 class="title">Basic Components
+                            </h3><h6 class="description">The core elements of your website</h6>
+                            <h5 class="description">We re-styled every Bootstrap element to make it resemble Material Design and also fit with each other. All the Bootstrap components that you need in a development have been re-design with the new look. Besides the numerous basic elements, we have also created additional classes. All these items will help you take your project to the next level.
+                            </h5>
+                            
+                        </div>
+                        <div class="col-lg-6 col-md-12 ml-auto">
+                            <div class="image-container">
+                            <img class="components-macbook" src="./assets/img/section-components/laptop-basics.png" alt="">
+                            <img class="table-img" src="./assets/img/section-components/table.jpg" alt="">
+                            <img class="share-btn-img" src="./assets/img/section-components/share-btn.jpg" alt="">
+                            <img class="coloured-card-btn-img" src="./assets/img/section-components/coloured-card-with-btn.jpg" alt="">
+                            <img class="coloured-card-img" src="./assets/img/section-components/coloured-card.jpg" alt="">
+                            <img class="social-img" src="./assets/img/section-components/social-row.jpg" alt="">
+                            <img class="pin-btn-img" src="./assets/img/section-components/pin-btn.jpg" alt="">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="container">
-                    <div class="row">
-                    <div class="col-md-7">
-                        <div class="image-container">
-                        <img class="img" src="./assets/img/cards-test.png">
+                    <div class="row text-center section-download">
+                        <div class="col-md-8 ml-auto mr-auto">
+                        <h2>开始使用 OpenTAP</h2>
+                        <h4>
+                            OpenTAP 社区版（Community）和 OpenTAP 专业版（Pro）都是安全的。
+                            <br>
+                            OpenTAP 专业版 的更新速度会远高于 OpenTAP 社区版，如果你希望体验更多有趣的功能，那么 OpenTAP 专业版 将会是你最好的选择！
+                        </h4>
+                        </div>
+                        <div class="col-sm-8 col-md-5 ml-auto mr-auto">
+                            <p>
+                                <a href="https://github.com/TGSAN/OpenTAP/releases" class="btn btn-blue btn-lg btn-round" target="_blank">
+                                    <i class="fas fa-shapes"></i>
+                                    &nbsp;
+                                    下载 OpenTAP 专业版
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://github.com/TGSAN/OpenTAP/releases" class="btn btn-github btn-lg btn-round" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    &nbsp;
+                                    下载 OpenTAP 社区版
+                                </a>
+                            </p>
                         </div>
                     </div>
-                    <div class="col-md-4 ml-auto">
-                        <div class="section-description">
-                        <h3 class="title">Unconventional Cards</h3>
-                        <h6 class="description">One Card for Every Problem</h6>
-                        <h5 class="description">We love cards and everybody on the web seems to. We have gone above and beyond with options for you to organise your information. From cards designed for blog posts, to product cards or user profiles, you will have many options to choose from. All the cards follow the material principles and have a design that stands out. </h5>
+                    <div class="sharing-area text-center">
+                        <div class="row justify-content-center">
+                            <h3>Thank you for supporting us!</h3>
                         </div>
-                    </div>
+                        <button id="twitter" class="btn btn-raised btn-twitter btn-round sharrre">
+                            <i class="fab fa-twitter"></i>&nbsp;Tweet
+                        </button>
+                        <button id="facebook" class="btn btn-raised btn-facebook btn-round sharrre">
+                            <i class="fab fa-facebook-square"></i>&nbsp;Share
+                        </button>
+                        <button id="googlePlus" class="btn btn-raised btn-google-plus btn-round sharrre">
+                            <i class="fab fa-google-plus"></i>&nbsp;Share
+                        </button>
+                            <a id="github" href="https://github.com/creativetimofficial/material-kit" target="_blank" class="btn btn-raised btn-github btn-round">
+                            <i class="fab fa-github"></i>&nbsp;Star
+                        </a>
                     </div>
                 </div>
             </div>
-            <br/><br/><br/><br/>
-            <div class="section-components">
-                <div class="container">
-                    <div class="row">
-                    <div class="col-lg-5 col-md-12">
-                        <h3 class="title">Basic Components
-                        </h3><h6 class="description">The core elements of your website</h6>
-                        <h5 class="description">We re-styled every Bootstrap element to make it resemble Material Design and also fit with each other. All the Bootstrap components that you need in a development have been re-design with the new look. Besides the numerous basic elements, we have also created additional classes. All these items will help you take your project to the next level.
-                        </h5>
-                        
-                    </div>
-                    <div class="col-lg-6 col-md-12 ml-auto">
-                        <div class="image-container">
-                        <img class="components-macbook" src="./assets/img/section-components/laptop-basics.png" alt="">
-                        <img class="table-img" src="./assets/img/section-components/table.jpg" alt="">
-                        <img class="share-btn-img" src="./assets/img/section-components/share-btn.jpg" alt="">
-                        <img class="coloured-card-btn-img" src="./assets/img/section-components/coloured-card-with-btn.jpg" alt="">
-                        <img class="coloured-card-img" src="./assets/img/section-components/coloured-card.jpg" alt="">
-                        <img class="social-img" src="./assets/img/section-components/social-row.jpg" alt="">
-                        <img class="pin-btn-img" src="./assets/img/section-components/pin-btn.jpg" alt="">
+        </div>
+        <!-- 支付宝QR -->
+            <div class="modal fade" id="alipayQRModal" tabindex="-1" role="">
+                <div class="modal-dialog modal-login" role="document">
+                    <div class="modal-content">
+                        <div class="card card-signup card-plain">
+                            <div class="modal-header">
+                                <div class="card-header card-header-alipay text-center">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    <i class="material-icons-round">clear</i>
+                                </button>
+                                <h4 class="card-title">请使用手机支付宝扫码捐赠</h4>
+                                    <div class="social-line">
+                                        <i class="fab fa-alipay" style="font-size: 4rem"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="description text-center">请核对下收款方信息为 云萌网络 哦</p>
+                                <p class="text-center">
+                                    <svg width="200" height="200">
+                                        <image xlink:href="./assets/img/alipay.svg" src="./assets/img/alipay.png" width="200" height="200" />
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button class="btn btn-blue btn-raised btn-round" style="margin-bottom: 25px" class="close" data-dismiss="modal" aria-hidden="true">好的</button>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
+        <!--  End 支付宝QR -->
+        <!-- 微信QR -->
+        <div class="modal fade" id="wechatQRModal" tabindex="-1" role="">
+                <div class="modal-dialog modal-login" role="document">
+                    <div class="modal-content">
+                        <div class="card card-signup card-plain">
+                            <div class="modal-header">
+                                <div class="card-header card-header-wechat text-center">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    <i class="material-icons-round">clear</i>
+                                </button>
+                                <h4 class="card-title">请使用手机微信扫码捐赠</h4>
+                                    <div class="social-line">
+                                        <i class="fab fa-weixin" style="font-size: 4rem"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="description text-center">请核对下收款方信息为 云萌网络 哦</p>
+                                <p class="text-center">
+                                    <svg width="200" height="200">
+                                        <image xlink:href="./assets/img/wechat.svg" src="./assets/img/wechat.png" width="200" height="200" />
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button class="btn btn-success btn-raised btn-round" style="margin-bottom: 25px" class="close" data-dismiss="modal" aria-hidden="true">好的</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--  End 微信QR -->
+        <footer class="footer" data-background-color="black">
             <div class="container">
-                <div class="row text-center section-download">
-                    <div class="col-md-8 ml-auto mr-auto">
-                    <h2>Want more?</h2>
-                    <h4>We've just launched
-                        <a href="https://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-mk-demos" target="_blank">Material Kit PRO</a>. It has a huge number of components, sections and example pages. Start Your Development With A Badass Bootstrap UI Kit inspired by Material Design.</h4>
-                    </div>
-                    <div class="col-sm-8 col-md-5 ml-auto mr-auto">
-                    <a href="https://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-mk-demos" class="btn btn-rose btn-upgrade btn-lg btn-round" target="_blank">
-                        <i class="material-icons">unarchive</i> Upgrade to PRO
-                    </a>
-                    </div>
-                </div>
-                <div class="sharing-area text-center">
-                    <div class="row justify-content-center">
-                    <h3>Thank you for supporting us!</h3>
-                    </div>
-                    <button id="twitter" class="btn btn-raised btn-twitter btn-round sharrre">
-                    <i class="fa fa-twitter"></i> Tweet
-                    </button>
-                    <button id="facebook" class="btn btn-raised btn-facebook btn-round sharrre">
-                    <i class="fa fa-facebook-square"></i> Share
-                    </button>
-                    <button id="googlePlus" class="btn btn-raised btn-google-plus btn-round sharrre">
-                    <i class="fa fa-google-plus"></i> Share
-                    </button>
-                    <a id="github" href="https://github.com/creativetimofficial/material-kit" target="_blank" class="btn btn-raised btn-github btn-round">
-                    <i class="fa fa-github"></i> Star
-                    </a>
+                <nav class="float-left">
+                    <ul>
+                    <li>
+                        <a href="https://www.cloudmoe.com" target="_blank">
+                        CloudMoe Network
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://iloli.tv" target="_blank">
+                        TGSAN's Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://raw.githubusercontent.com/TGSAN/OpenTAP/master/LICENSE" target="_blank">
+                        OpenTAP 社区版许可证
+                        </a>
+                    </li>
+                    </ul>
+                </nav>
+                <div class="copyright float-right">
+                    CloudMoe Network & TGSAN &copy;
+                    <script>
+                    document.write(new Date().getFullYear())
+                    </script>&nbsp;使用 Material Kit 框架。
                 </div>
             </div>
-        </div>
-    </div>
-  <!-- Classic Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <i class="material-icons">clear</i>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-link">Nice Button</button>
-          <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--  End Modal -->
-  <footer class="footer" data-background-color="black">
-    <div class="container">
-      <nav class="float-left">
-        <ul>
-          <li>
-            <a href="https://www.creative-tim.com">
-              Creative Tim
-            </a>
-          </li>
-          <li>
-            <a href="https://creative-tim.com/presentation">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="http://blog.creative-tim.com">
-              Blog
-            </a>
-          </li>
-          <li>
-            <a href="https://www.creative-tim.com/license">
-              Licenses
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="copyright float-right">
-        &copy;
+        </footer>
+        <!--   Core JS Files   -->
+        <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+        <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+        <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+        <script src="./assets/js/plugins/moment.min.js"></script>
+        <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+        <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+        <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+        <!-- <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script> -->
+        <!--  Google Maps Plugin    -->
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
+        <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+        <script src="./assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
         <script>
-          document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
-      </div>
-    </div>
-  </footer>
-  <!--   Core JS Files   -->
-  <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-  <script src="./assets/js/plugins/moment.min.js"></script>
-  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-  <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
-  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-  <!-- <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script> -->
-  <!--  Google Maps Plugin    -->
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
-  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="./assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
-  <script>
-    // $(document).ready(function() {
-    //   //init DateTimePickers
-    //   materialKit.initFormExtendedDatetimepickers();
+            // $(document).ready(function() {
+            //   //init DateTimePickers
+            //   materialKit.initFormExtendedDatetimepickers();
 
-    //   // Sliders Init
-    //   materialKit.initSliders();
-    // });
+            //   // Sliders Init
+            //   materialKit.initSliders();
+            // });
 
-    function scrollToDownload() {
-      if ($('.section-download').length != 0) {
-        $("html, body").animate({
-          scrollTop: $('.section-download').offset().top
-        }, 1000);
-      }
-    }
+            function scrollToDownload() {
+            if ($('.section-download').length != 0) {
+                $("html, body").animate({
+                scrollTop: $('.section-download').offset().top
+                }, 1000);
+            }
+            }
 
-  </script>
-</body>
-<script type="text/javascript">
-    //文字轮播
-    var description_info_index = 0;
-    var description_info_list = [
-        "开源游戏加速器",
-        "开源SS/V2Ray/Socks5协议客户端",
-        "开源TAP虚拟网卡客户端",
-        "开源全局/局部代理工具",
-    ];
-    function description_info_while(){
-        if(description_info_index < description_info_list.length - 1)
-        {
-            description_info_index = description_info_index + 1;
+        </script>
+    </body>
+    <script type="text/javascript">
+        //文字轮播
+        var description_info_index = 0;
+        var description_info_list = [
+            "开源游戏加速器",
+            "开源SS/V2Ray/Socks5协议客户端",
+            "开源TAP虚拟网卡客户端",
+            "开源全局/局部代理工具",
+        ];
+        function description_info_while(){
+            if(description_info_index < description_info_list.length - 1)
+            {
+                description_info_index = description_info_index + 1;
+            }
+            else
+            {
+                description_info_index = 0;
+            }
+            return description_info_list[description_info_index];
         }
-        else
-        {
-            description_info_index = 0;
+        var description_info = document.getElementById('description_info');
+        function description_info_show(){
+            description_info.innerHTML = description_info_while();
+            description_info.style.opacity = 1;
         }
-        return description_info_list[description_info_index];
-    }
-    var description_info = document.getElementById('description_info');
-    function description_info_show(){
-        description_info.innerHTML = description_info_while();
-        description_info.style.opacity = 1;
-    }
-    function description_info_timer(){
-        description_info.style.opacity = 0;
-        setTimeout("description_info_show()",500);
-    }
-    setInterval("description_info_timer()",5000); 
-</script>
+        function description_info_timer(){
+            description_info.style.opacity = 0;
+            setTimeout("description_info_show()",500);
+        }
+        setInterval("description_info_timer()",5000); 
+    </script>
+    <script type="text/javascript">
+        //////////////////////////////
+        // Demo Functions
+        //////////////////////////////
+        function init(showStats) {
+        // stats
+        if (showStats) {
+            var stats = new Stats();
+            stats.domElement.style.position = 'absolute';
+            stats.domElement.style.left = '0';
+            stats.domElement.style.top = '0';
+            document.body.appendChild(stats.domElement);
+            requestAnimationFrame(function updateStats(){
+            stats.update();
+            requestAnimationFrame(updateStats);
+            });
+        }
+        // init
+        var svg = document.getElementById('svg-background');
+        tesselation.setup(svg);
+        gradients.setup();
+        var lastTransitionAt, transitionDelay = 5500, transitionDuration = 3000;
+        function playNextTransition() {
+            tesselation.next(transitionDuration);
+            gradients.next(transitionDuration);
+        };
+        function tick(time) {
+            if (!lastTransitionAt || time - lastTransitionAt > transitionDelay) {
+            lastTransitionAt = time;
+            playNextTransition();
+            }
+            window.requestAnimationFrame(tick);
+        }
+        window.requestAnimationFrame(tick);
+        }
+        //////////////////////////////
+        // Delaunay Triangulation
+        //////////////////////////////
+        var calcDelaunayTriangulation = (function() {
+        var EPSILON = 1.0 / 1048576.0;
+        function getSuperT(vertices) {
+            var xMin = Number.POSITIVE_INFINITY, yMin = Number.POSITIVE_INFINITY,
+                xMax = Number.NEGATIVE_INFINITY, yMax = Number.NEGATIVE_INFINITY,
+                i, xDiff, yDiff, maxDiff, xCenter, yCenter;
+            for(i = vertices.length; i--; ) {
+            if(vertices[i][0] < xMin) xMin = vertices[i][0];
+            if(vertices[i][0] > xMax) xMax = vertices[i][0];
+            if(vertices[i][1] < yMin) yMin = vertices[i][1];
+            if(vertices[i][1] > yMax) yMax = vertices[i][1];
+            }
+            xDiff = xMax - xMin;
+            yDiff = yMax - yMin;
+            maxDiff = Math.max(xDiff, yDiff);
+            xCenter = xMin + xDiff * 0.5;
+            yCenter = yMin + yDiff * 0.5;
+            return [
+            [xCenter - 20 * maxDiff, yCenter - maxDiff],
+            [xCenter, yCenter + 20 * maxDiff],
+            [xCenter + 20 * maxDiff, yCenter - maxDiff]
+            ];
+        }
+        function circumcircle(vertices, i, j, k) {
+            var xI = vertices[i][0], yI = vertices[i][1],
+                xJ = vertices[j][0], yJ = vertices[j][1],
+                xK = vertices[k][0], yK = vertices[k][1],
+                yDiffIJ = Math.abs(yI - yJ), yDiffJK = Math.abs(yJ - yK),
+                xCenter, yCenter, m1, m2, xMidIJ, xMidJK, yMidIJ, yMidJK, xDiff, yDiff;
+            // bail condition
+            if(yDiffIJ < EPSILON && yDiffJK < EPSILON)
+            throw new Error("Can't get circumcircle since all 3 points are y-aligned");
+            // calc circumcircle center x/y, radius
+            m1  = -((xJ - xI) / (yJ - yI));
+            m2  = -((xK - xJ) / (yK - yJ));
+            xMidIJ = (xI + xJ) / 2.0;
+            xMidJK = (xJ + xK) / 2.0;
+            yMidIJ = (yI + yJ) / 2.0;
+            yMidJK = (yJ + yK) / 2.0;
+            xCenter = (yDiffIJ < EPSILON) ? xMidIJ :
+            (yDiffJK < EPSILON) ? xMidJK :
+            (m1 * xMidIJ - m2 * xMidJK + yMidJK - yMidIJ) / (m1 - m2);
+            yCenter  = (yDiffIJ > yDiffJK) ?
+            m1 * (xCenter - xMidIJ) + yMidIJ :
+            m2 * (xCenter - xMidJK) + yMidJK;
+            xDiff = xJ - xCenter;
+            yDiff = yJ - yCenter;
+            // return
+            return {i: i, j: j, k: k, x: xCenter, y: yCenter, r: xDiff * xDiff + yDiff * yDiff};
+        }
+        function dedupeEdges(edges) {
+            var i, j, a, b, m, n;
+            for(j = edges.length; j; ) {
+            b = edges[--j]; a = edges[--j];
+            for(i = j; i; ) {
+                n = edges[--i]; m = edges[--i];
+                if((a === m && b === n) || (a === n && b === m)) {
+                edges.splice(j, 2); edges.splice(i, 2);
+                break;
+                }
+            }
+            }
+        }
+        return function(vertices) {
+            var n = vertices.length,
+                i, j, indices, st, candidates, locked, edges, dx, dy, a, b, c;
+            // bail if too few / too many verts
+            if(n < 3 || n > 2000)
+            return [];
+            // copy verts and sort indices by x-position
+            vertices = vertices.slice(0);
+            indices = new Array(n);
+            for(i = n; i--; )
+            indices[i] = i;
+            indices.sort(function(i, j) {
+            return vertices[j][0] - vertices[i][0];
+            });
+            // supertriangle
+            st = getSuperT(vertices);
+            vertices.push(st[0], st[1], st[2]);
+            // init candidates/locked tris list
+            candidates = [circumcircle(vertices, n + 0, n + 1, n + 2)];
+            locked = [];
+            edges = [];
+            // scan left to right
+            for(i = indices.length; i--; edges.length = 0) {
+            c = indices[i];
+            // check candidates tris against point
+            for(j = candidates.length; j--; ) {
+                // lock tri if point to right of circumcirc
+                dx = vertices[c][0] - candidates[j].x;
+                if(dx > 0.0 && dx * dx > candidates[j].r) {
+                locked.push(candidates[j]);
+                candidates.splice(j, 1);
+                continue;
+                }
+                // point outside circumcirc = leave candidates
+                dy = vertices[c][1] - candidates[j].y;
+                if(dx * dx + dy * dy - candidates[j].r > EPSILON)
+                continue;
+                // point inside circumcirc = break apart, save edges
+                edges.push(
+                candidates[j].i, candidates[j].j,
+                candidates[j].j, candidates[j].k,
+                candidates[j].k, candidates[j].i
+                );
+                candidates.splice(j, 1);
+            }
+            // new candidates from broken edges
+            dedupeEdges(edges);
+            for(j = edges.length; j; ) {
+                b = edges[--j];
+                a = edges[--j];
+                candidates.push(circumcircle(vertices, a, b, c));
+            }
+            }
+            // close candidates tris, remove tris touching supertri verts
+            for(i = candidates.length; i--; )
+            locked.push(candidates[i]);
+            candidates.length = 0;
+            for(i = locked.length; i--; )
+            if(locked[i].i < n && locked[i].j < n && locked[i].k < n)
+                candidates.push(locked[i].i, locked[i].j, locked[i].k);
+            // done
+            return candidates;
+        };
+        })();
+        var tesselation = (function() {
+        var svg, svgW, svgH, prevGroup;
+        function createRandomTesselation() {
+            var wW = window.innerWidth;
+            var wH = window.innerHeight;
+            var gridSpacing = 250, scatterAmount = 0.75;
+            var gridSize, i, x, y;
+            if (wW / wH > svgW / svgH) { // window wider than svg = use width for gridSize
+            gridSize = gridSpacing * svgW / wW;
+            } else { // window taller than svg = use height for gridSize
+            gridSize = gridSpacing * svgH / wH;
+            }
+            var vertices = [];
+            var xOffset = (svgW % gridSize) / 2, yOffset = (svgH % gridSize) / 2;
+            for (x = Math.floor(svgW/gridSize) + 1; x >= -1; x--) {
+            for (y = Math.floor(svgH/gridSize) + 1; y >= -1; y--) {
+                vertices.push(
+                [
+                    xOffset + gridSize * (x + scatterAmount * (Math.random() - 0.5)),
+                    yOffset + gridSize * (y + scatterAmount * (Math.random() - 0.5))
+                ]
+                );
+            }
+            }
+            var triangles = calcDelaunayTriangulation(vertices);
+            var group = document.createElementNS('http://www.w3.org/2000/svg','g');
+            var polygon;
+            for(i = triangles.length; i; ) {
+            polygon = document.createElementNS('http://www.w3.org/2000/svg','polygon');
+            polygon.setAttribute('points',
+                vertices[triangles[--i]][0] + ',' + vertices[triangles[i]][1] + ' ' +
+                vertices[triangles[--i]][0] + ',' + vertices[triangles[i]][1] + ' ' +
+                vertices[triangles[--i]][0] + ',' + vertices[triangles[i]][1]
+            );
+            group.appendChild(polygon);
+            }
+            return group;
+        }
+        return {
+            setup: function(svgElement) {
+            svg = svgElement;
+            var vb = svg.getAttribute('viewBox').split(/\D/g);
+            svgW = vb[2];
+            svgH = vb[3];
+            },
+            next: function(t) {
+            var toRemove, i, n;
+            t /= 1000;
+            if (prevGroup && prevGroup.children && prevGroup.children.length) {
+                toRemove = prevGroup;
+                n = toRemove.children.length;
+                for (i = n; i--; ) {
+                TweenMax.to(toRemove.children[i], t*0.4, {opacity: 0, delay: t*(0.3*i/n)});
+                }
+                TweenMax.delayedCall(t * (0.7 + 0.05), function(group) { svg.removeChild(group); }, [toRemove], this);
+            }
+            var g = createRandomTesselation();
+            n = g.children.length;
+            for (i = n; i--; ) {
+                TweenMax.fromTo(g.children[i], t*0.4, {opacity: 0}, {opacity: 0.3 + 0.25 * Math.random(), delay: t*(0.3*i/n + 0.3), ease: Back.easeOut});
+            }
+            svg.appendChild(g);
+            prevGroup = g;
+            }
+        }
+        })();
+        //////////////////////////////
+        // Gradients
+        //////////////////////////////
+        var gradients = (function() {
+        var grad1, grad2, showingGrad1;
+        // using colors from IBM Design Colors this time
+        // var colors = [ // 14 colors - use 3-5 span
+        //     '#3c6df0', // ultramarine50
+        //     '#12a3b4', // aqua40
+        //     '#00a78f', // teal40
+        //     '#00aa5e', // green40
+        //     '#81b532', // lime30
+        //     '#e3bc13', // yellow20
+        //     '#ffb000', // gold20
+        //     '#fe8500', // orange30
+        //     '#fe6100', // peach40
+        //     '#e62325', // red50
+        //     '#dc267f', // magenta50
+        //     '#c22dd5', // purple50
+        //     '#9753e1', // violet50
+        //     '#5a3ec8'  // indigo60
+        // ];
+        var colors = [ // 16 colors MD color - use 3-5 span
+            '#f44336',
+            '#e91e63',
+            '#9c27b0',
+            '#673ab7',
+            '#3f51b5',
+            '#2196f3',
+            '#03a9f4',
+            '#00bcd4',
+            '#009688',
+            '#4caf50',
+            '#8bc34a',
+            '#cddc39',
+            '#ffeb3b',
+            '#ffc107',
+            '#ff9800',
+            '#ff5722',
+        ];
+        function assignRandomColors(gradObj) {
+            var rA = Math.floor(colors.length * Math.random());
+            var rB = Math.floor(Math.random() * 3) + 3; // [3 - 5]
+            rB = (rA + (rB * (Math.random() < 0.5 ? -1 : 1)) + colors.length) % colors.length;
+            gradObj.stopA.setAttribute('stop-color', colors[rA]);
+            gradObj.stopB.setAttribute('stop-color', colors[rB]);
+        }
+        return {
+            setup: function() {
+            showingGrad1 = false;
+            grad1 = {
+                stopA: document.getElementById('stop1a'),
+                stopB: document.getElementById('stop1b'),
+                rect:  document.getElementById('rect1')
+            };
+            grad2 = {
+                stopA: document.getElementById('stop2a'),
+                stopB: document.getElementById('stop2b'),
+                rect:  document.getElementById('rect2')
+            };
+            grad1.rect.style.opacity = 0;
+            grad2.rect.style.opacity = 0;
+            },
+            next: function(t) {
+            t /= 1000;
+            var show, hide;
+            if (showingGrad1) {
+                hide = grad1;
+                show = grad2;
+            } else {
+                hide = grad2;
+                show = grad1;
+            }
+            showingGrad1 = !showingGrad1;
+            TweenMax.to(hide.rect, 0.55*t, {opacity: 0, delay: 0.2*t, ease: Sine.easeOut});
+            assignRandomColors(show);
+            TweenMax.to(show.rect, 0.65*t, {opacity: 1, ease: Sine.easeIn});
+            }
+        };
+        })();
+        //////////////////////////////
+        // Start
+        //////////////////////////////
+        init();
+    </script>
 </html>
